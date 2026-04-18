@@ -1,0 +1,138 @@
+/* Color Palette Source: https://coolors.co/palette/01161e-124559-598392-aec3b0-eff6e0 */
+:root {
+    --ink-bl: #01161e;
+    --celest-canv: #0A2E3C;
+    --dark-teal: #124559;
+    --air-force: #598392;
+    --ash-grey: #aec3b0;
+    --beige: #eff6e0;
+}
+
+* {
+    margin: 0%;
+}
+
+body {
+    background-color: var(--ink-bl);
+}
+
+/*Text*/
+
+h2,h1,li,a,p {
+    font-family: 'Segoe UI';
+    color: var(--beige);
+}
+
+b {
+    font-family: 'Consolas';
+}
+
+.indent {
+    text-indent: 4em;
+}
+
+/*Header*/
+
+header {
+    background-color: var(--dark-teal);
+    z-index: 100;
+}
+
+header > h1 {
+    padding: 5px;
+}
+
+nav {
+    background-color: var(--celest-canv);
+    display: flex;
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+a {
+    background-color: var(--celest-canv);
+    padding: 5px 15px;
+    font-size: larger;
+    color: var(--beige);
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    background-color: var(--dark-teal);
+    padding: 5px 25px;
+}
+
+/*Main*/
+
+main {
+    background-color: var(--ink-bl);
+}
+
+main > * {
+    z-index: 0;
+    margin: 32px;
+    padding: 16px;
+    background-color: var(--dark-teal);
+    max-width: 650px;
+}
+
+main > * > div {
+    background-color: var(--beige);
+    padding: 4px;
+}
+
+main > * > *:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+main > * > h2 {
+    background-color: var(--air-force);
+    padding: 4px;
+}
+
+main p {
+    color: var(--ink-bl);
+    padding: 4px;
+}
+
+/*Box Model*/
+
+#margin {
+    background-color: var(--air-force);
+}
+
+#margin p {
+    color: var(--beige);
+    justify-self: center;
+}
+
+#border {
+    background-color: var(--celest-canv);
+}
+
+#padding {
+    background-color: var(--dark-teal);
+}
+
+#content {
+    background-color: var(--beige);
+}
+
+#content p {
+    color: var(--ink-bl);
+}
+
+#margin, #margin div {
+    margin-top: 2px;
+    padding: 2px 15px;
+}
+
+/*Resume*/
+
+#resume {
+    height: 75vh;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Brett Cartwright</h1>
+        <nav id="navbar"></nav>
+    </header>
+
+    <main>
+        <div>
+            <h2>Selectors</h2>
+            <div>
+                <p><b>*</b> - all elements</p>
+                <p><b>div</b> - all div tags</p>
+                <p><b>div,p</b> - all divs and paragraphs</p>
+                <p><b>div p</b> - all decendants of divs that are paragraphs</p>
+                <p><b>div > p</b> - all direct children of divs that are paragraphs</p>
+                <p><b>#name</b> - first element with id "name"</p>
+                <p><b>.className</b> - all elements with class "className"</p>
+                <p><b>div.className</b> - all divs with class "className"</p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Psuedo Classes</h2>
+            <div>
+                <p><b>div:empty</b> - all divs without children</p>
+                <p><b>div:first-child</b> - all divs that are the first child of their parent</p>
+                <p><b>div:last-child</b> - all divs that are the last child of their parent</p>
+                <p><b>div:only-child</b> - all divs that are the only child of thier parent</p>
+                <p><b>div:nth-child(2)</b> - all divs whos positions as children of thier parent is divisible by 2</p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Syntax</h2>
+            <div>
+                <b>Selector {</b> <br>
+                <b>property-1: value</b> <br>
+                <b>property-2: value2</b> <br>
+                <b>}</b>
+            </div>
+        </div>
+
+        <div>
+            <h2>Box Model</h2>
+            <div>
+                <div id="margin">
+                    <p>margin</p>
+                    <div id="border">
+                        <p>border</p>
+                        <div id="padding">
+                            <p>padding</p>
+                            <div id="content">
+                                <p>content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
